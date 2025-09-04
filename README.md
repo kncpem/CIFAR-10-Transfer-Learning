@@ -24,7 +24,7 @@ After fine-tuning, the CNN feature extractors were used to train different ML mo
 ### 🔹 Example Images (one per class)
 | airplane | automobile | bird | cat | deer | dog | frog | horse | ship | truck |
 |----------|------------|------|-----|------|-----|------|-------|------|-------|
-| ![airplane](sample_images/airplane.png) | ![auto](sample_images/automobile.png) | ![bird](sample_images/bird.png) | ![cat](sample_images/cat.png) | ![deer](sample_images/deer.png) | ![dog](sample_images/dog.png) | ![frog](sample_images/frog.png) | ![horse](sample_images/horse.png) | ![ship](sample_images/ship.png) | ![truck](sample_images/truck.png) |
+| ![airplane](sample_images/airplane.png) | ![auto](sample_images/auto.png) | ![bird](sample_images/bird.png) | ![cat](sample_images/cat.png) | ![deer](sample_images/deer.png) | ![dog](sample_images/dog.png) | ![frog](sample_images/frog.png) | ![horse](sample_images/horse.png) | ![ship](sample_images/ship.png) | ![truck](sample_images/truck.png) |
 
 ---
 
@@ -33,8 +33,8 @@ After fine-tuning, the CNN feature extractors were used to train different ML mo
 ### 1. Fine-Tuned CNNs  
 | Model         | Accuracy |
 |---------------|----------|
-| VGG19 + Head  | XX.XX %  |
-| ResNet50 + Head | XX.XX %  |
+| VGG19 + Head  | 82.94 %  |
+| ResNet50 + Head | 96.01 %  |
 
 ### 2. Extracted Features + ML Models  
 (Using features from GAP layer of fine-tuned CNNs)  
@@ -42,11 +42,10 @@ After fine-tuning, the CNN feature extractors were used to train different ML mo
 | Base Features | ML Model         | Accuracy |
 |---------------|------------------|----------|
 | VGG19         | Logistic Regression | XX.XX % |
-| VGG19         | SVM                 | XX.XX % |
-| VGG19         | Random Forest       | XX.XX % |
-| ResNet50      | Logistic Regression | XX.XX % |
-| ResNet50      | SVM                 | XX.XX % |
-| ResNet50      | Random Forest       | XX.XX % |
+| VGG19         | Random Forest       | 84.51 % |
+| VGG19         | SVM (RBF Kernel)    | 84.77 % |
+| VGG19         | KNN (k = 5)         | 83.74 % |
+| VGG19         | XGBoost             | 84.50 % |
 
 ---
 
